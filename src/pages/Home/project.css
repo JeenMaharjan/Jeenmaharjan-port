@@ -1,0 +1,73 @@
+.btn-primary,
+.btn-secondary {
+    border: 2px solid transparent;
+    padding: 8px 16px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    border-color: #1a7f5a31;
+}
+
+.btn-primary .btn-content,
+.btn-secondary .btn-content {
+    transition: all 0.3s;
+}
+
+.btn-primary:hover .btn-content {
+    color: #1a7f5a;
+}
+
+.btn-secondary:hover .btn-content {
+    color: #ffffff;
+}
+
+.btn-primary,
+.btn-secondary {
+    border: 2px solid #135e4c82;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    border-color: #1a7f5a31;
+    background-color: #1a7f5a31;
+}
+
+.btn-primary .btn-content,
+.btn-secondary .btn-content {
+    transition: all 0.3s;
+}
+
+.btn-primary:hover .btn-content {
+    color: #1a7f5a;
+}
+
+.btn-secondary:hover .btn-content {
+    color: #ffffff;
+}
+
+.project-image {
+    height: 200px;
+    /* Adjust the height as needed */
+    width: 100%;
+    /* Ensure the image fills the container width */
+    object-fit: cover;
+    /* Maintain the aspect ratio and cover the container */
+}
+
+.projectImage {
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+    width: 2500px
+}
+
+@media (max-width: 767px) {
+    .projectImage {
+        width: 370px
+    }
+}

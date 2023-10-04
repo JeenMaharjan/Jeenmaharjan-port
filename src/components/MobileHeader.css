@@ -1,0 +1,100 @@
+.mobile-header-container {
+  
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.mobile-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px; /* Decrease the max width */
+  margin: 0 auto;
+  padding: 0 10px; /* Decrease the horizontal padding */
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 24px; /* Decrease the font size */
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: auto;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /* Normal color */
+  transition: color 0.3s ease-in-out;
+  /* Added to push the logo to the center */
+}
+
+.logo:hover {
+  transform: rotate(3deg);
+  color: #00A5E0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Decrease the margin-top */
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 10px; /* Decrease the margin-bottom */
+}
+
+.nav-link {
+  color: #f0f0f0; /* Change the text color to a lighter shade */
+  font-size: 16px; /* Decrease the font size */
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1a7f5a;
+}
+
+.navbar-action {
+  cursor: pointer;
+  height: 2rem; /* Decrease the height */
+  width: 2rem; /* Decrease the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 200;
+}
+
+.navbar-icon {
+  width: 1.6rem; /* Decrease the width */
+  height: 2px; /* Keep the height */
+  background-color: #f0f0f0; /* Change the color to a lighter shade */
+  transition: .3s;
+}
+
+.navbar-action--hover:hover .navbar-icon:first-child {
+  width: 1.8rem; /* Decrease the width */
+}
+
+.navbar-action--hover:hover .navbar-icon:last-child {
+  width: 0.8rem; /* Decrease the width */
+}
+
+.navbar-icon:first-child {
+  margin-bottom: 0.6rem; /* Decrease the margin-bottom */
+}
+
+@media (min-width: 768px) {
+  .mobile-header-container {
+    display: none;
+  }
+}
